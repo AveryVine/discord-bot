@@ -18,9 +18,11 @@ client.on('message', message => {
                 message.channel.send('pong');
             }
             else if (content.startsWith('summoner ')) {
+                content = content.replace('summoner ', '').trim();
                 league.summoner(message, content);
             }
             else if (content.startsWith('youtube ')) {
+                content = content.replace('youtube ', '').trim();
                 youtube.search(message, content);
             }
         }
