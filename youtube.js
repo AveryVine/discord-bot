@@ -5,4 +5,5 @@ const $ = module.exports;
 
 $.search = function(messageObject, content) {
     console.log("Searching YouTube for: " + content);
+    
 }

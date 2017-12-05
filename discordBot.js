@@ -23,6 +23,9 @@ client.on('message', message => {
             else if (content.startsWith('youtube ')) {
                 youtube.search(message, content);
             }
+            else if (content.startsWith('twitch ')) {
+                twitch.search(message, content);
+            }
         }
     }
 });
