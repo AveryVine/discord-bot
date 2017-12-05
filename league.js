@@ -21,7 +21,6 @@ class Summoner {
 
 $.summoner = function (messageObject, content) {
     message = messageObject;
-    content = content.replace('summoner ', '').trim();
     var region = "NA";
     if (content.includes('/')) {
         region = content.substring(content.indexOf('/') + 1, content.length);
