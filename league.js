@@ -19,15 +19,15 @@ class Summoner {
     }
 }
 
-$.lookup = function (messageObject) {
+$.summoner = function (messageObject, content) {
     message = messageObject;
-    var input = message.content.replace('lookup ', '').trim();
+    content = content.replace('summoner ', '').trim();
     var region = "NA";
-    if (input.includes('/')) {
-        region = input.substring(input.indexOf('/') + 1, input.length);
-        input = input.substring(0, input.indexOf('/')).trim();
+    if (content.includes('/')) {
+        region = content.substring(content.indexOf('/') + 1, content.length);
+        content = content.substring(0, content.indexOf('/')).trim();
     }
-    var summonerName = input;
+    var summonerName = content;
     console.log("Looking up " + summonerName);
     var url = 'https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/' + encodeURIComponent(summonerName) + '?api_key=' + apiKeys.riot;
     console.log("Reaching out to " + url);
