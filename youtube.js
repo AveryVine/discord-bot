@@ -20,7 +20,7 @@ $.search = function (messageObject, searchInput) {
         }
         else {
             console.log(results);
-            message.channel.sendMessage(results[0].link);
+            message.channel.send(results[0].link);
         }
     });
 }
