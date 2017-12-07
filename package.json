@@ -5,13 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "discord.js": "^11.2.1",
-<<<<<<< HEAD
     "request": "^2.83.0",
     "youtube-search": "^1.0.10"
-=======
-    "googleapis": "^23.0.0",
-    "request": "^2.83.0"
->>>>>>> 6d3b5869151438d35c898cf2211b14d469554b01
   },
   "devDependencies": {},
   "scripts": {
