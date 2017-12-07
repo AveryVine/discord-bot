@@ -17,8 +17,7 @@ $.search = function (messageObject, searchInput) {
         if (err) {
             console.log("Something went wrong!\n" + err);
             sendMessage("Something went wrong!");
-        }
-        else {
+        } else {
             console.log(results);
             message.channel.sendMessage(results[0].link);
         }
